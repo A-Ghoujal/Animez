@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# MyMovies Watchlist React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The web can be checked out here  https://animeocean.netlify.app/
 
-## Available Scripts
+## File Structure
 
-In the project directory, you can run:
+- public
+  - index.html
+- src
+  - Components
+    - Airing.js
+    - AnimeItem.js
+    - Gallery.js
+    - Homepage.js
+    - Popular.js
+    - Sidebar.js
+    - Upcoming.js
+  - context
+    - App.test.js
+  - global.js
+  - setupTests.css
+  - App.js
+  - Gloabalstyle.js
+  - index.js
+* index.js: The entry point of the application where the React app is rendered to the DOM.
+* index.css: The CSS file for the root component.
+* App.js: The main component that acts as a router and contains the routes for different pages.
+* components: A directory containing reusable components used in the app.
+    * Home.js: A component representing the home page of the app, displaying a list of movies.
+    * Watchlist.js: A component representing the watchlist page, displaying saved movies.
+    * MovieDetails.js: A component representing the movie details page, showing details of a specific movie.
+* context: A directory containing the React context for managing favorite movies.
+    * FavoriteMovies.js: A context provider component for managing favorite movies.
 
-### `npm start`
+## Must-Have Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [x] Responsive app
+- [x] Using an API to fetch data
+- [x] Home Page: The home page displays a list of Animes fetched from an API. It allows users to search for movies by keyword and filter movies .
+- [x] Movie Details Page: The movie details page shows detailed information about a specific movie, including its title, Rank , runtime, release date, and description.
+- [x] Can also check the anime characters and their images and watch a trailer about the anime .
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Nice-to-Have Features
+- [x] Anime Trailer: Show a trailer for each anime .
+- [x] A short descreption about the anime 
+- [x] Sorting and Filtering: Add options to sort anime by popularity,
 
-### `npm test`
+## Getting Started
+To run the React app locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository.
+2. Install dependencies by running npm install.
+3. Start the development server with npm start.
+4. Open the app in your browser at http://localhost:3000.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
